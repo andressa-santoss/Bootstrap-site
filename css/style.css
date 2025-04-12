@@ -96,6 +96,7 @@ a:hover {
 @media (min-width: 1200px) {
     .navmenu {
         padding: 0;
+
     }
 
     .navmenu ul {
@@ -150,7 +151,8 @@ a:hover {
         padding: 10px 0;
         display: block;
         position: absolute;
-        visibility: hidden;
+        background: var(--background-color);
+        --background-color: #fff;
         /*  */
         left: 14px;
         top: 130%;
@@ -552,6 +554,18 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
     top: -15%;
     left: -15%;
+}
+
+.pulsating-play-btn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: ;
+    border-left: ;
 }
 .about .pulsating-play-btn{
     position: absolute;
