@@ -1,8 +1,19 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Fontes para todo o projeto */
+:root{
+    --font-padrao: "Roboto", sans-serif;
+    --font-titulo: "Raleway", sans-serif,
+    --font-nav: "Poppins", sans-serif;
+
+}
 /* Cores para todo o site - Global Color */
 :root {
-    --default-color: #e7e7e7;
+    --default-color: #444;
     /* Cor Texto */
-    --background-color: #444;
+    --background-color: #fff;
     /* Cor Fundo */
     --heading-color: #e7e7e7;
     /* Cor Títulos */
@@ -12,7 +23,7 @@
     /* Fundos destaques */
     --contrast-color: #444;
     /* Cor de Contraste para Texto */
-
+   
 }
 
 /* Nav Menu Color */
@@ -32,6 +43,15 @@ body {
     background-color: var(--background-color);
     color: var(--default-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--font-titulo);
+
+}
 
 a {
     color: var(--accent-color);
@@ -48,6 +68,7 @@ a:hover {
 .header {
     color: var(--default-color);
     background-color: var(--background-color);
+    --background-color:rgba(0,0,0,0);
     padding: 15px 0;
     transition: all 0.5s;
     z-index: 997;
@@ -68,7 +89,9 @@ a:hover {
 .scrolled .header {
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
     --background-color: rgba(0, 0, 0, 0.85);
+    
 }
+
 
 @media (min-width: 1200px) {
     .navmenu {
@@ -462,5 +485,87 @@ section,
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
+    }
+}
+
+/* SOBRE */
+
+.about .content h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about .content ul{
+    list-style: none;
+    padding: 0;
+}
+.about .content ul li{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.about .content ul i{
+    color: var(--accent-color);
+    flex-shrink: 0;
+    font-size: 40px;
+    margin-right: 10px;
+    line-height: 0;
+}
+.about .content ul h5{
+    font-size: 18px;
+    font-weight: 700;
+}
+.about .content ul p{
+    font-size: 15px;
+}
+.about .content p:last-child{
+    margin-bottom: 0;
+}
+
+/* Play video */
+.pulsating-play-btn{
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--accent-color) 50%,
+    color-mix(in srgb,var(--accent-color), transparent 75%) 52%);
+    display: block;
+    position: relative;
+    /* overflow: ; */
+    border-radius: 50%;
+/* radial-gradient(...)	
+var(--accent-color) 50%	A cor sólida ocupa os primeiros 50% do raio
+color-mix(in srgb, var(--accent-color), transparent 75%) 52%	
+A partir de 52%, começa a mistura da cor com 75% de transparência
+in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível com navegadores) */
+}
+.pulsating-play-btn::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    animation-delay: 0s;
+    animation: pulsating-play-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps();
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+    top: -15%;
+    left: -15%;
+}
+.about .pulsating-play-btn{
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+}
+
+@keyframes pulsating-play-btn{
+    0%{
+        transform: scale(0.6,0.6);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 0;
     }
 }
