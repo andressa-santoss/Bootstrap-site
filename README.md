@@ -1,2 +1,2 @@
 # bootstrap-site
-# SEO   ---> Estudar
+# SEO   ---> Search Engine Optimization (estudar)
