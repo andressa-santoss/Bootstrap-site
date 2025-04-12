@@ -1,1 +1,2 @@
 # bootstrap-site
+# SEO   ---> Estudar
