@@ -640,5 +640,16 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     font-family: var(--font-padrao);
     font-size: 14px;
     margin: 0 0 0 60px;
-
 }
+/* Serviços */
+.services .service-item{
+    position: relative;
+    height: 100%;
+    margin-bottom: 30px;
+}
+.services .service-item i{
+    font-size: 20px;
+    padding: 0 15px 0 0;
+    color: var(--accent-color);
+}
+
