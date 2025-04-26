@@ -606,3 +606,39 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
         opacity: 0;
     }
 }
+
+/* Stats  */
+
+.stats .stats-item{
+    padding: 30px;
+    width: 100%;
+}
+.stats{
+    background-color: #e3e0e0;
+}
+.stats .stats-item i{
+    color: var(--accent-color);
+    display: block;
+    font-size: 44px;
+    float: left;
+    line-height: 0;
+
+}
+.stats .stats-item .purecounter{
+    color: var(--contrast-color);
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    margin-left: 60px;
+    font-family: 'Poppins';
+}
+.stats .stats-item p{
+    color: var(--contrast-color);
+    padding: 15px 0 0 0;
+    padding-top: 15px 0 0 0;
+    font-family: var(--font-padrao);
+    font-size: 14px;
+    margin: 0 0 0 60px;
+
+}
