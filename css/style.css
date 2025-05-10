@@ -669,7 +669,12 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     margin: 0 0 0 60px;
 }
 
-
+/* Global title */
+.section-title{
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+}
 
 /* Serviços */
 .services .service-item {
@@ -699,12 +704,6 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     font-size: 15px;
     color: #060606;
     margin-bottom: 10px;
-}
-/* Global title */
-.section-title{
-    text-align: center;
-    padding-bottom: 20px;
-    position: relative;
 }
 
 .section-title h2 {
@@ -750,9 +749,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 
 }
 
-
 /* Call to action */
-
 .call-to-action{
     padding: 150px 0;
     position: relative;
@@ -769,6 +766,10 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     z-index: 1;
     
 }
+
+/* Portifolio */
+
+
 
 
 /* Scroll */
