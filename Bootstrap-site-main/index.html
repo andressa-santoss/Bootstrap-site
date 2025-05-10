@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techlynx | Tecnologias</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="A Techlynx, criada por Andressa Santos (@andressa-santoss no GitHub), oferece soluções tecnológicas rápidas, eficientes e personalizadas. Desenvolvemos sistemas inovadores sob medida, com consultoria especializada em TI para otimizar processos e impulsionar o crescimento da sua empresa. Conecte-se ao futuro com a Techlynx.">
+    <meta name="keywords" content="desenvolvimento, front-end, app, soluções tecnologicas">
+    <meta name="author" content="Andressa Santos">
+
+    <!-- Limpar o cache do navegador CTRL + F5 -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <!-- Version Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+
+    <!-- Galeria -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Carousel / Slide -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <!-- logo -->
+            <a href="#hero" class="logo d-flex align-items-center">
+
+                <h1 class="sitename"> Techlynx </h1>
+
+
+            </a>
+            <!-- menu -->
+            <nav id="navmenu" class="navmenu">
+
+                <ul>
+                    <li>
+                        <a href="#hero" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#team">Equipe</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <span>Mais Opções</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="">Opção 1</a>
+                            </li>
+                            <li>
+                                <a href="">Opção 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+            </nav>
+        </div>
+
+
+    </header>
+
+    <main class="main">
+
+        <section id="hero" class="hero section dark-background">
+            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+                data-bs-pause="false">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/hero/hero-carousel-1.jpg" alt="">
+                    <div class="carousel-container">
+                        <h2>
+                            Bem Vindo, somos a Techlynx
+                        </h2>
+                        <p>
+                            Conectando o futuro com agilidade e precisão.
+                        </p>
+                        <a href="#about" class="btn-get-started">
+                            Leia Mais...
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/hero/hero-carousel-2.jpg" alt="">
+                    <div class="carousel-container">
+                        <h2>
+                            Inovação que Impulsiona Seu Negócio
+                        </h2>
+                        <p>
+                            Transforme sua empresa com soluções tecnológicas inovadoras.
+                        </p>
+                        <a href="#stats" class="btn-get-started">
+                            Leia Mais...
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/hero/hero-carousel-3.jpg" alt="">
+                    <div class="carousel-container">
+                        <h2>
+                            Conecte-se com o Futuro Digital
+                        </h2>
+                        <p>
+                            Conecte-se ao futuro com software sob medida e consultoria especializada.
+                        </p>
+                        <a href="#services" class="btn-get-started">
+                            Leia Mais...
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#hero-carousel" role="button" data-bs-slide="prev" class="carousel-control-prev">
+
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a href="#hero-carousel" role="button" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+
+                </a>
+
+                <ol class="carousel-indicators">
+                </ol>
+            </div>
+
+        </section>
+
+
+        <!-- Sobre -->
+        <section id="about" class="about section">
+            <div class="container" data-aos="" data-aos-delay="">
+
+                <div class="row gy-4">
+                    <!--- video-->
+                    <article class="col-lg-5 position-relative"> <!--COL "COLUNA" | LG "TAMANHO TELA" |-->
+                        <img src="img/about.jpg" class="img-fluid" alt="about">
+                        <a href="https://www.youtube.com/watch?v=fZoVdy041oU" class="glightbox pulsating-play-btn"></a>
+                    </article>
+
+                    <!-- descrições -->
+                    <article class="col-lg-7 content ps-lg-4 "> <!--PS "PADDING"-->
+                        <h3>Sobre a Techlynx</h3>
+                        <p>A Techlynx é uma empresa de soluções tecnológicas rápidas e eficientes. Nosso objetivo é
+                            ajudar sua empresa a se conectar ao futuro, com sistemas inovadores e personalizados que
+                            atendem às suas necessidades específicas.</p>
+
+                        <ul>
+                            <li>
+                                <i class="bi bi-diagram-3"> </i>
+                                <div>
+                                    <h5>Soluções Personalizadas</h5>
+                                    <p>Desenvolvemos soluções tecnológicas sob medida para cada cliente, garantindo que
+                                        suas necessidades sejam atendidas com precisão e eficiência. </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-fullscreen-exit"> </i>
+                                <div>
+                                    <h5>Inovação e Agilidade</h5>
+                                    <p>Estamos sempre à frente das tendências, criando sistemas rápidos e inovadores que
+                                        acompanham a evolução constante do mercado. </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class="bi bi-broadcast"> </i>
+                                <div>
+                                    <h5>Consultoria Especializada</h5>
+                                    <p>Oferecemos consultoria estratégica em TI, ajudando sua empresa a otimizar
+                                        processos e tomar decisões tecnológicas mais assertivas.
+                                    <p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Status / Estatisticas-->
+        <section id="stats" class="stats">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <article class="col-lg-3 col-md-6">
+
+                        <div class="stats-item">
+
+                            <i class="bi bi-emoji-smile"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="5"
+                                class="purecounter"></span>
+
+                            <p>
+                                <strong>Clientes satisfeitos:</strong><br>
+                                <span>Compromisso com a excelência</span>
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-kanban"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="600" data-purecounter-duration="5"
+                                class="purecounter"></span>
+
+                            <p>
+                                <strong>Projetos:</strong><br>
+                                <span>Entregas com qualidade garantida
+                                </span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-headset"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="5"
+                                class="purecounter"></span>
+                            <p>
+                                <strong>Suporte:</strong><br>
+                                <span>Canal exclusivo para clientes corporativos</span>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-people"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="5"
+                                class="purecounter"></span>
+                            <p>
+                                <strong>Equipes esforçados</strong>
+                                <span>Agilidade e eficiência na execução</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Serviços -->
+        <section id="services" class="services">
+
+            <div class="container section-title">
+                <h2>Serviços</h2>
+                <div>
+                    <span>Conheça nossos</span>
+                    <span class="description-title">Serviços</span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row gy-4">
+
+                    <!-- Serviços -->
+                    <article class="col-lg-4 col-md-6 d-flex service-item ">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="title">Desenvolvimento de Sistemas Sob Medida</h4>
+                            <p class="description">Criação de softwares personalizados para atender exatamente às
+                                necessidades operacionais e estratégicas de cada cliente. </p>
+                            <a href="#" class="readmore stretched-link">
+                                <span>Leia mais.</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-4 col-md-6 d-flex service-item ">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="title">Plataformas Digitais Inovadoras</h4>
+                            <p class="description">Desenvolvimento de plataformas web e mobile utilizando as tecnologias
+                                mais recentes, com foco em performance, escalabilidade e experiência do usuário. </p>
+                            <a href="#" class="readmore stretched-link">
+                                <span>Leia mais.</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+                    <article class="col-lg-4 col-md-6 d-flex service-item ">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi-graph-up-arrow"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="title">Consultoria Estratégica de Transformação Digital</h4>
+                            <p class="description">Apoio completo na modernização tecnológica da empresa, desde a
+                                análise de processos até a implementação de soluções inovadoras. </p>
+                            <a href="#" class="readmore stretched-link">
+                                <span>Leia mais.</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="col-lg-4 col-md-6 d-flex service-item ">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="title">Serviços de Integração de Sistemas</h4>
+                            <p class="description">Conexão e automação entre diferentes sistemas e plataformas da
+                                empresa para otimizar fluxos de trabalho e reduzir retrabalho manual.
+                            </p>
+                            <a href="#" class="readmore stretched-link">
+                                <span>Leia mais.</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="col-lg-4 col-md-6 d-flex service-item ">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="title">Laboratório de Inovação Tecnológica</h4>
+                            <p class="description">Espaço dedicado à criação de protótipos, testes de novas ideias e
+                                desenvolvimento ágil de MVPs (mínimos produtos viáveis) para lançamento rápido no
+                                mercado.
+                            </p>
+                            <a href="#" class="readmore stretched-link">
+                                <span>Leia mais.</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+
+                    <article class="col-lg-4 col-md-6 d-flex service-item ">
+                        <div class="icon flex-shrink-0">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="title">Auditoria e Otimização de Infraestrutura de TI</h4>
+                            <p class="description">Análise completa da infraestrutura tecnológica da empresa com
+                                recomendações personalizadas para melhorar desempenho, segurança e escalabilidade.
+                            </p>
+                            <a href="#" class="readmore stretched-link">
+                                <span>Leia mais.</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- Fim container -->
+
+            </div>
+
+        </section>
+
+        <!-- Parallax action WhatsApp-->
+        <section id="call-to-action" class="call-to-action section dark-background">
+
+            <img src="img/cta-bg.jpg">
+
+            <div class="container">
+
+            </div>
+
+        </section>
+
+        <!-- Portifólio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container section-title">
+                <h2>Portifólio</h2>
+                <div>
+                    <span>Confira nosso</span>
+                    <span class="description-title">Portifólio</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedbacks -->
+        <section id="testimonials" class="testimonials">
+               <div class="container section-title">
+                <h2>Feedbacks</h2>
+                <div>
+                    <span>Confira</span>
+                    <span class="description-title">Feedbacks</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Equipes -->
+        <section id="team" class="team">
+               <div class="container section-title">
+                <h2>Equipe</h2>
+                <div>
+                    <span>Conheça nossa</span>
+                    <span class="description-title">Equipe</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contatos -->
+        <section id="contact" class="contact">
+
+               <div class="container section-title">
+                <h2>Contato</h2>
+                <div>
+                    <span>Precisa de ajuda? </span>
+                    <span class="description-title">Entre em Contato</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="" class="">
+
+    </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+
+
+    <!-- Bootstrap JS Files -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+
+    <!-- Galeria JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+
+    <!-- Animação p/ Número = Contador -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+    <!-- Load IMG -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Filtro -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Carousel / Slide -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.js"></script>
+
+    <!-- JS Principal -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
