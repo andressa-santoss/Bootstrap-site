@@ -709,11 +709,6 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     margin-bottom: 30px;
 }
 
-.services .service-item i {
-    font-size: 20px;
-    padding: 0 15px 0 0;
-    color: var(--accent-color);
-}
 .services .service-item .icon {
     margin-right: 20px;
 }
@@ -723,11 +718,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     line-height: 0;
     transition: 0.3s;
 }
-.services .service-item:hover .icon i{
-    color: #334b61;
-    transition: all 0.2s ease-in-out;
 
-}
 
 .services .service-item .title{
    color: #3645a5f7; 
@@ -770,4 +761,23 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 }
 .section-title div .description-title{
     color: #438bca;
+}
+.services .service-item .readmore{
+    display: flex;
+    align-items: center;
+    color: #a3a3a3c8;
+    transition: all 0.3s ;
+    font-weight: 700;
+    font-size: 14px;
+}
+.services .service-item .readmore i{
+    margin-left: 8px;
+    
+}
+.services .service-item:hover .title,
+.services .service-item:hover .readmore,
+.services .service-item:hover .icon i {
+    color: #438bca;
+    transition: all 0.2s ease-in-out;
+
 }
