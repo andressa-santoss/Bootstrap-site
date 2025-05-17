@@ -722,7 +722,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 }
 .section-title div{
     color: #252525;
-    margin: 15px 0 20px 0;
+    margin: 10px 0 20px 0;
     font-size:32px;
     font-weight: 700;
     font-family: var(--font-titulo);
@@ -815,7 +815,13 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     transition: all .3s ease-in-out;
     background: #0606063e;
     padding: 15px;
+    opacity: 0;
 }
+.portfolio .portfolio-content:hover .portfolio-info{
+    opacity:1 ;
+}
+
+
 .portfolio .portfolio-content:hover img{
     transform: scale(1.1);
 }
