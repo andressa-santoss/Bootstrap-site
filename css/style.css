@@ -752,7 +752,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 
 /* Call to action */
 .call-to-action{
-    padding: 150px 0;
+    padding: 130px 0;
     position: relative;
     clip-path: inset(0);
 }
@@ -764,10 +764,25 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
-    
+    z-index: 1;  
+}
+.call-to-action h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 29px white;
 }
 
+.call-to-action::before{
+    content: "";
+    background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;  /*Sobreposição*/
+}
+.call-to-action .container{
+    position: relative;
+    z-index: 3;
+}
 /* Portifolio */
 
 
