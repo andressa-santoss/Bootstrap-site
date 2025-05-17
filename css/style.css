@@ -317,6 +317,7 @@ section,
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 60px 0;
+    scroll-margin-top: 40px;  /*Ajuste na tela para ficar de rente a titulo da sessão/*/
 }
 
 @media (max-width: 1199px){
@@ -721,7 +722,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 }
 .section-title div{
     color: #252525;
-    margin: 10px 0 50px 0;
+    margin: 15px 0 20px 0;
     font-size:32px;
     font-weight: 700;
     font-family: var(--font-titulo);
