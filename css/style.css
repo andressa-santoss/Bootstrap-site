@@ -752,7 +752,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 
 /* Call to action */
 .call-to-action{
-    padding: 130px 0;
+    padding: 100px 0;
     position: relative;
     clip-path: inset(0);
 }
@@ -769,7 +769,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 .call-to-action h3{
     font-size: 30px;
     font-weight: 700;
-    text-shadow: 2px 2px 29px white;
+    /* text-shadow: 2px 2px 29px white; */
 }
 
 .call-to-action::before{
@@ -782,6 +782,28 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 .call-to-action .container{
     position: relative;
     z-index: 3;
+}
+.call-to-action p{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.call-to-action .cta-btn{
+    font-family: var(--font-titulo);
+    font-size: 18px;
+    font-size: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 2px solid #e3e0e0;
+    color: #f1f0f0;
+    padding: 12px 40px;;
+    border-radius: 5px;
+    transition: .5s;
+    margin: 10px;
+}
+.call-to-action .cta-btn:hover{
+    background:#075e54;
+    border: 2px solid #075e54;
 }
 /* Portifolio */
 
