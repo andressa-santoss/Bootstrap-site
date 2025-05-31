@@ -806,8 +806,6 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     border: 2px solid #075e54;
 }
 /* Portifolio */
-
-
 .portfolio .portfolio-filters{
     padding: 0;
     margin: 0 auto 20px auto;
@@ -910,6 +908,8 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     opacity: 1;
 }
 
+/* Feedbacks */
+
 
 .feedbacks .feedback-item{
     background-color: #fafafa;
@@ -980,9 +980,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
   }
 
 
-  /*-------------------------------
-# Equipe 
-----------------------------------*/
+/* Equipe */
 .team .member {
   position: relative;
   overflow: hidden;
@@ -1053,9 +1051,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
   bottom: 0;
   transition: bottom ease-in-out 0.4s;
 }
-/*-------------------------------
-# Contato
-----------------------------------*/
+/* Contatos */
 .contact .info-item {
   background: color-mix(in srgb, var(--default-color), transparent 96%);
   padding: 30px;
