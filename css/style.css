@@ -1177,7 +1177,7 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
   padding-top: 0;
 }
 .footer .footer-links ul a{
-    color: #cacacaa1;
+    color: #cacacae9;
     line-height: 1;
     display: inline-block;
 }
@@ -1186,6 +1186,10 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
 }
 .footer .newsletter{
     background-color: #fff;
+}
+
+.footer-newsletter p{
+    color: #cacacae9;
 }
 .footer .footer-newsletter .newsletter-form{
     margin-top: 30px;
@@ -1197,6 +1201,52 @@ in srgb	Define o espaço de cor usado para a mistura (mais comum e compatível c
     background: #060606;
     border: 1px solid #aaaaaa88;
     transition: 0.3s;
-
-
+}
+.footer .footer-newsletter .newsletter-form:focus-within{
+    border-color: var(--accent-color);
+}
+.footer-newsletter .newsletter-form [type=email]{
+    width: 100%;
+    padding: 4px;
+    border: 0;
+    color: #fff;
+    background: #060606;
+}
+.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible{
+    outline: none;
+}
+.footer .footer-newsletter .newsletter-form input[type=submit]{
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: -7px -9px -7px 0;
+    border: 0 4px 4px 0;
+    background: var(--accent-color);
+    color: #fff;
+    transition: 0.3S;
+}
+.footer .footer-newsletter .newsletter-form input[type=submit]:hover{
+    padding: 25px 0;
+    border-top: 1px solid #cccccc42
+}
+.footer .copyright{
+    padding: 25px 0;
+    border-top: 1px solid #cccccc42;
+}
+.footer .copyright p{
+    color: #cacacae9;
+    margin-bottom: 0;
+}
+.footer .creditos{
+    margin-top: 6px;
+    font-size: 13px;
+    color: #cacacae9;
+    
+}
+.footer .creditos a{
+    color: #cacacae9;
+;
+}
+.footer .copyright .creditos i {
+    margin-left: 10px;
 }
